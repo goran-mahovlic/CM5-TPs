@@ -1,0 +1,155 @@
+(kicad_sch
+	(version 20250114)
+	(generator "cm5_tp_breakout_gen")
+	(generator_version "9.0")
+	(uuid "b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd")
+	(paper "A4")
+	(title_block
+		(title "CM5 Test Point Breakout")
+		(rev "1")
+		(company "izvedeno iz schlae/cm5-reveng, CC BY-SA 4.0")
+		(comment 1 "Izvedeno iz obratno projektiranoga CM5 modula (schlae/cm5-reveng)")
+	)
+	(lib_symbols
+	)
+	(sheet
+		(at 20.0 40.0)
+		(size 70.0 25.0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "38c5398c-3125-56bc-9ae0-80f2a9573d3a")
+		(property "Sheetname" "Test Points"
+			(at 20.0 38.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "testpoints.kicad_sch"
+			(at 20.0 66.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 105.0 40.0)
+		(size 70.0 25.0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6e933d5a-07de-51f5-a464-465795824a90")
+		(property "Sheetname" "CM5 Connectors"
+			(at 105.0 38.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cm5_connectors.kicad_sch"
+			(at 105.0 66.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 190.0 40.0)
+		(size 70.0 25.0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c98e71d4-3084-5c50-8ea4-ea484809aa3b")
+		(property "Sheetname" "Mechanical"
+			(at 190.0 38.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mechanical.kicad_sch"
+			(at 190.0 66.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd"
+					(page "4")
+				)
+			)
+		)
+	)
+	(text "CM5 TEST POINT BREAKOUT\nSadrži samo ono što treba za mjerenje na modulu Raspberry Pi Compute Module 5:\n  • 58 test-točaka s donjeg sloja (list Test Points),\n  • oba 100-pinska konektora modula, J3 i J4 (list CM5 Connectors),\n  • četiri rupe za pričvršćenje (list Mechanical).\nGeometrija je preuzeta 1:1 iz izvorne ploče, pa se položaji poklapaju s pravim modulom.\nVodovi, zone i ostale sastavnice izostavljeni su; mreže koje spajaju više elemenata\nvidljive su kao nespojene veze i u ovome su projektu namjerno neusmjerene.\nIzvor: github.com/schlae/cm5-reveng (CC BY-SA 4.0), Tube Time. Opis svih točaka: README.md"
+		(exclude_from_sim no)
+		(at 20 90 0)
+		(effects
+				(font
+					(size 1.6 1.6)
+				)
+				(justify left)
+			)
+		(uuid "2863aced-291a-5a6c-b89e-fabe4a9bc086")
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

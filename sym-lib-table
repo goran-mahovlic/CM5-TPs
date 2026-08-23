@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "cm5_tp_breakout")(type "KiCad")(uri "${KIPRJMOD}/cm5_tp_breakout.kicad_sym")(options "")(descr "Simboli za CM5 test point breakout"))
+)

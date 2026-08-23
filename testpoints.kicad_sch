@@ -1,0 +1,6630 @@
+(kicad_sch
+	(version 20250114)
+	(generator "cm5_tp_breakout_gen")
+	(generator_version "9.0")
+	(uuid "38c5398c-3125-56bc-9ae0-80f2a9573d3a")
+	(paper "A2")
+	(title_block
+		(title "CM5 Test Point Breakout — test-točke")
+		(rev "1")
+		(company "izvedeno iz schlae/cm5-reveng, CC BY-SA 4.0")
+		(comment 1 "58 test-točaka na donjem sloju modula; opis signala uz svaku točku")
+	)
+	(lib_symbols
+		(symbol "cm5_tp_breakout:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "TEST-TOČKE CM5 MODULA (58 komada, sve na donjem sloju, pad promjera 1,0 mm)\nPoredane po skupini: napajanje, masa, upravljanje, JTAG/UART, I2C, Ethernet, USB, svjetiljke, ostalo.\nIme u oznaci jest ime mreže na ploči; puna je tablica u README.md."
+		(exclude_from_sim no)
+		(at 20 20 0)
+		(effects
+				(font
+					(size 2.0 2.0)
+				)
+				(justify left)
+			)
+		(uuid "28887cd3-c0a2-5c4b-b791-3e4e02ca507f")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 41.910000000000004 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d783a4d-815e-567e-a6c2-c6ee53028ded")
+		(property "Reference" "TP63"
+			(at 41.910000000000004 35.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5V_SENSE"
+			(at 41.910000000000004 37.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 41.910000000000004 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.910000000000004 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 41.910000000000004 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "5 V iza sklopke s ograničenjem struje u PMIC-u DA9091; na ploči označeno 5V_SENSE — mjerna točka, ne opterećivati."
+			(at 41.910000000000004 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 41.910000000000004 44.45) (xy 41.910000000000004 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18426e81-7f43-5a0a-8bf6-14776355e40b")
+	)
+	(global_label "+5V"
+		(shape passive)
+		(at 41.910000000000004 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "2e0416da-0820-59e8-8581-9a2e8b31abf2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.910000000000004 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | 5,0 V | 5 V iza\nsklopke s ograničenjem struje u\nPMIC-u DA9091; na ploči označeno\n5V_SENSE — mjerna točka, ne\nopterećivati."
+		(exclude_from_sim no)
+		(at 39.410000000000004 57.150000000000006 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "de098c43-ecf6-5d16-999a-2bbf805489ed")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 41.910000000000004 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ed7171b0-e2d6-5ad5-8d6b-cd59f29499d4")
+		(property "Reference" "TP1"
+			(at 41.910000000000004 72.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5V"
+			(at 41.910000000000004 74.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 41.910000000000004 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.910000000000004 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 41.910000000000004 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ulazno napajanje modula s nosive ploče, prije sklopke PMIC-a (J3, nožice 77–87)."
+			(at 41.910000000000004 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 41.910000000000004 81.28) (xy 41.910000000000004 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1a963d8-84b0-5f33-8586-a0ad38262d79")
+	)
+	(global_label "+5VIN"
+		(shape passive)
+		(at 41.910000000000004 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "2dada6e1-205e-543b-8e52-f66a94b626d5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.910000000000004 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | 5,0 V | Ulazno\nnapajanje modula s nosive ploče,\nprije sklopke PMIC-a (J3, nožice\n77–87)."
+		(exclude_from_sim no)
+		(at 39.410000000000004 93.98 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "f06ead63-f029-5530-bb80-9f3429f3e6ba")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 41.910000000000004 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1ed1ef3e-4e36-50e1-a1eb-421da5cabb7a")
+		(property "Reference" "TP78"
+			(at 41.910000000000004 109.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5V"
+			(at 41.910000000000004 111.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 41.910000000000004 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.910000000000004 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 41.910000000000004 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ulazno napajanje modula s nosive ploče, prije sklopke PMIC-a (J3, nožice 77–87)."
+			(at 41.910000000000004 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP78")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 41.910000000000004 118.11) (xy 41.910000000000004 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13e8f0fa-1be9-537e-a181-20d91bd8a458")
+	)
+	(global_label "+5VIN"
+		(shape passive)
+		(at 41.910000000000004 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "1b32f90e-801c-5340-8183-43292c2355fe")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.910000000000004 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | 5,0 V | Ulazno\nnapajanje modula s nosive ploče,\nprije sklopke PMIC-a (J3, nožice\n77–87)."
+		(exclude_from_sim no)
+		(at 39.410000000000004 130.81 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "d25553bb-88b9-5c6c-9486-1fb1d28ad468")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 41.910000000000004 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "880f2856-cb4d-5d41-9d98-67926bf5da10")
+		(property "Reference" "TP34"
+			(at 41.910000000000004 146.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CM5_1V8"
+			(at 41.910000000000004 148.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 41.910000000000004 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.910000000000004 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 41.910000000000004 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Sabirnica 1,8 V modula izvedena na konektor (J3, nožice 88 i 90)."
+			(at 41.910000000000004 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 41.910000000000004 154.94) (xy 41.910000000000004 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb30a4dd-fbfc-5caf-934f-322ffccc6881")
+	)
+	(global_label "CM5_1V8"
+		(shape passive)
+		(at 41.910000000000004 160.02 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "6ddd57af-aced-5529-aa96-148f1ebd39cb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.910000000000004 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | 1,8 V | Sabirnica 1,8\nV modula izvedena na konektor (J3,\nnožice 88 i 90)."
+		(exclude_from_sim no)
+		(at 39.410000000000004 167.64 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "cba3f823-8c88-5e9b-8ce9-e58c160a6c70")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 41.910000000000004 191.76999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f4da403-75d8-56c4-a14e-915c10633539")
+		(property "Reference" "TP33"
+			(at 41.910000000000004 183.26999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CM5_3V3"
+			(at 41.910000000000004 185.26999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 41.910000000000004 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.910000000000004 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 41.910000000000004 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Sabirnica 3,3 V modula izvedena na konektor (J3, nožice 84 i 86)."
+			(at 41.910000000000004 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 41.910000000000004 191.76999999999998) (xy 41.910000000000004 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b741f08-6551-574d-b7d0-75d1486de334")
+	)
+	(global_label "CM5_3V3"
+		(shape passive)
+		(at 41.910000000000004 196.85 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "24d91c41-2280-504d-8577-aa61dbdfb434")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.910000000000004 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | 3,3 V | Sabirnica 3,3\nV modula izvedena na konektor (J3,\nnožice 84 i 86)."
+		(exclude_from_sim no)
+		(at 39.410000000000004 204.46999999999997 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "fd44efe4-6031-587c-98bc-c7bb8d1fc8f5")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 41.910000000000004 228.59999999999997 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ffd41823-c271-5780-9abb-ff6b1a96cc68")
+		(property "Reference" "TP64"
+			(at 41.910000000000004 220.09999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_1V0_PHY"
+			(at 41.910000000000004 222.09999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 41.910000000000004 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.910000000000004 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 41.910000000000004 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Izlaz unutarnjega regulatora ethernetskoga PHY-ja BCM54210PE (U4), nožica VREG; na ploči označeno VDD_1V0_PHY."
+			(at 41.910000000000004 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 41.910000000000004 228.59999999999997) (xy 41.910000000000004 233.67999999999998)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77037bad-fce5-5c44-993a-75cc3ac1e10f")
+	)
+	(global_label "ETHPHY_U4_VREG"
+		(shape passive)
+		(at 41.910000000000004 233.67999999999998 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "a51c4ec8-c5e4-54e8-a8f2-67ecd097321c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.910000000000004 233.67999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | – | Izlaz unutarnjega\nregulatora ethernetskoga PHY-ja\nBCM54210PE (U4), nožica VREG; na\nploči označeno VDD_1V0_PHY."
+		(exclude_from_sim no)
+		(at 39.410000000000004 241.29999999999995 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "89ecbbf4-0193-596c-a7ee-fdab151d5376")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 41.910000000000004 265.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7e6a176c-1036-530a-af72-9d5eb5253927")
+		(property "Reference" "TP77"
+			(at 41.910000000000004 256.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GPIO_VREF"
+			(at 41.910000000000004 258.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 41.910000000000004 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.910000000000004 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 41.910000000000004 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Referentni napon skupine GPIO na RP1; određuje logičke razine (J3, nožica 78)."
+			(at 41.910000000000004 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP77")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 41.910000000000004 265.43) (xy 41.910000000000004 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "672f4580-d462-54e1-a553-0b4cea405ea1")
+	)
+	(global_label "GPIO_VREF"
+		(shape passive)
+		(at 41.910000000000004 270.51 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "c5e56e78-0d43-5aaf-88db-990c44e9239d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.910000000000004 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | 3,3 V | Referentni\nnapon skupine GPIO na RP1;\nodređuje logičke razine (J3,\nnožica 78)."
+		(exclude_from_sim no)
+		(at 39.410000000000004 278.13 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "1df28544-e1f6-5b59-bd70-14bd4e2b7095")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 41.910000000000004 302.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b107cf1c-ece5-5c73-964a-28cdf2121c32")
+		(property "Reference" "TP30"
+			(at 41.910000000000004 293.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0V6"
+			(at 41.910000000000004 295.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 41.910000000000004 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.910000000000004 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 41.910000000000004 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "VDDQ za LPDDR4X (U2) iz PMIC-a; osjetljivo na šum i pad napona."
+			(at 41.910000000000004 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 41.910000000000004 302.26) (xy 41.910000000000004 307.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11ac5634-5ff0-536f-a008-fd233898a1a0")
+	)
+	(global_label "VDD_0V6"
+		(shape passive)
+		(at 41.910000000000004 307.34 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "ade67999-3478-52ce-972a-1f4933d86147")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.910000000000004 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | 0,6 V | VDDQ za\nLPDDR4X (U2) iz PMIC-a; osjetljivo\nna šum i pad napona."
+		(exclude_from_sim no)
+		(at 39.410000000000004 314.96 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "1b3be9d0-1c9d-5d7e-926d-1eadc6fda77e")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 41.910000000000004 339.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "90a467f5-3871-587c-a6f6-220e678cd85c")
+		(property "Reference" "TP29"
+			(at 41.910000000000004 330.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_0V8_BCM"
+			(at 41.910000000000004 332.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 41.910000000000004 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.910000000000004 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 41.910000000000004 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Pomoćna sabirnica 0,8 V za BCM2712."
+			(at 41.910000000000004 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 41.910000000000004 339.09) (xy 41.910000000000004 344.16999999999996)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51210fff-3376-53d4-8607-5c8340575197")
+	)
+	(global_label "VDD_0V8_BCM"
+		(shape passive)
+		(at 41.910000000000004 344.16999999999996 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "9b043257-17d8-5103-b51e-71883408e7cf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.910000000000004 344.16999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | 0,8 V | Pomoćna\nsabirnica 0,8 V za BCM2712."
+		(exclude_from_sim no)
+		(at 39.410000000000004 351.78999999999996 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "7214ec82-bdbb-5c86-9cf1-010c3707c8d5")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 41.910000000000004 375.91999999999996 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "70e5604d-4360-5cc4-ba87-415f9636a568")
+		(property "Reference" "TP15"
+			(at 41.910000000000004 367.41999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_0V8_LDO"
+			(at 41.910000000000004 369.41999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 41.910000000000004 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.910000000000004 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 41.910000000000004 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Izlaz linearnoga regulatora 0,8 V (niskošumni dio)."
+			(at 41.910000000000004 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 41.910000000000004 375.91999999999996) (xy 41.910000000000004 380.99999999999994)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a66571d-8efa-572b-8f77-59f8d8cdf632")
+	)
+	(global_label "VDD_0V8_LDO"
+		(shape passive)
+		(at 41.910000000000004 380.99999999999994 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "1841b665-5d43-5635-a386-222e4d0a06cb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.910000000000004 380.99999999999994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | 0,8 V | Izlaz\nlinearnoga regulatora 0,8 V\n(niskošumni dio)."
+		(exclude_from_sim no)
+		(at 39.410000000000004 388.61999999999995 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "0f882ebb-3d52-5f67-95fb-323b5b65fd74")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 133.35 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f695402d-99ff-5a81-8b32-26c36fd80033")
+		(property "Reference" "TP31"
+			(at 133.35 35.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1V1"
+			(at 133.35 37.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 133.35 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Sabirnica 1,1 V (VDD1 memorije LPDDR4X i logika)."
+			(at 133.35 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 133.35 44.45) (xy 133.35 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1360b8e7-4c1b-54df-8e97-4113df39ab22")
+	)
+	(global_label "VDD_1V1"
+		(shape passive)
+		(at 133.35 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "1a6593e8-5704-5d20-9cbd-9210c84e587f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 133.35 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | 1,1 V | Sabirnica 1,1\nV (VDD1 memorije LPDDR4X i\nlogika)."
+		(exclude_from_sim no)
+		(at 130.85 57.150000000000006 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "2bc02c07-b198-5c75-9ddd-ffb02a0711bc")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 133.35 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "25bdd4ea-509e-50b6-ab15-6a0f7e46ac4b")
+		(property "Reference" "TP27"
+			(at 133.35 72.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_1V1_RP1"
+			(at 133.35 74.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 133.35 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jezgreno napajanje 1,1 V za ulazno-izlazni most RP1."
+			(at 133.35 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 133.35 81.28) (xy 133.35 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df1d7cd1-cf3f-5cb6-b6d0-fd59674a6784")
+	)
+	(global_label "VDD_1V1_RP1"
+		(shape passive)
+		(at 133.35 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "dce8a9af-d35e-5ddd-8cea-ee95fb7698d2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 133.35 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | 1,1 V | Jezgreno\nnapajanje 1,1 V za ulazno-izlazni\nmost RP1."
+		(exclude_from_sim no)
+		(at 130.85 93.98 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "fe76e47f-9f18-5a89-9a9a-de8454acf310")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 133.35 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2f8e9892-835f-5694-b9ba-2847afb6b19f")
+		(property "Reference" "TP45"
+			(at 133.35 109.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_1V1_RP1"
+			(at 133.35 111.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 133.35 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jezgreno napajanje 1,1 V za ulazno-izlazni most RP1."
+			(at 133.35 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 133.35 118.11) (xy 133.35 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "510bb9ab-714a-5115-b912-2deb454b143b")
+	)
+	(global_label "VDD_1V1_RP1"
+		(shape passive)
+		(at 133.35 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "d69806bb-3634-541b-af0b-5e480f9aa654")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 133.35 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | 1,1 V | Jezgreno\nnapajanje 1,1 V za ulazno-izlazni\nmost RP1."
+		(exclude_from_sim no)
+		(at 130.85 130.81 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "049695b9-daf3-5855-a9e8-b33f5661724e")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 133.35 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "03ba148c-4258-5692-931f-a55547239fa1")
+		(property "Reference" "TP18"
+			(at 133.35 146.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_1V8_2"
+			(at 133.35 148.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 133.35 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Druga grana 1,8 V (ulazi/izlazi i memorija)."
+			(at 133.35 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 133.35 154.94) (xy 133.35 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1d0ab7c-5cef-5ba7-afe3-5ce865f68de4")
+	)
+	(global_label "VDD_1V8_2"
+		(shape passive)
+		(at 133.35 160.02 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "f0d44c24-8ce5-521d-ad58-0ebff38a7497")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 133.35 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | 1,8 V | Druga grana\n1,8 V (ulazi/izlazi i memorija)."
+		(exclude_from_sim no)
+		(at 130.85 167.64 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "4ae5a193-c4ae-5bb0-ad71-2bd8f16cc54b")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 133.35 191.76999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8600498e-7aa3-5807-97e8-9000a9cbcd94")
+		(property "Reference" "TP44"
+			(at 133.35 183.26999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_2V5_RP1"
+			(at 133.35 185.26999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 133.35 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Napajanje 2,5 V analognoga dijela RP1 (PLL i PHY)."
+			(at 133.35 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 133.35 191.76999999999998) (xy 133.35 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d0d524c-fe55-50a8-82ee-9cc59defdec7")
+	)
+	(global_label "VDD_2V5_RP1"
+		(shape passive)
+		(at 133.35 196.85 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "96296151-088f-5df0-af24-f6ab9902731a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 133.35 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | 2,5 V | Napajanje 2,5\nV analognoga dijela RP1 (PLL i\nPHY)."
+		(exclude_from_sim no)
+		(at 130.85 204.46999999999997 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "ca8a30f8-0180-5b8d-8f04-6d82a05124e7")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 133.35 228.59999999999997 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1368509f-a9ec-5262-b14a-bbab158948e8")
+		(property "Reference" "TP17"
+			(at 133.35 220.09999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_3V3_2"
+			(at 133.35 222.09999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 133.35 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Druga grana 3,3 V (ulazi/izlazi)."
+			(at 133.35 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 133.35 228.59999999999997) (xy 133.35 233.67999999999998)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6706f9c6-4fd0-5f7a-82d0-ceb6f7683d3a")
+	)
+	(global_label "VDD_3V3_2"
+		(shape passive)
+		(at 133.35 233.67999999999998 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "32d7f048-5113-580b-a747-f2ee78093fdf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 133.35 233.67999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | 3,3 V | Druga grana\n3,3 V (ulazi/izlazi)."
+		(exclude_from_sim no)
+		(at 130.85 241.29999999999995 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "a9c45b6a-8f6b-5dac-91b4-ea9c6e0ad2ed")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 133.35 265.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "90d175ae-e861-5f8d-a747-2cd7510ef6d8")
+		(property "Reference" "TP32"
+			(at 133.35 256.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_3V7_WIFI"
+			(at 133.35 258.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 133.35 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Napajanje modula WiFi/Bluetooth RP1-RM0 (U7)."
+			(at 133.35 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 133.35 265.43) (xy 133.35 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98a12ca0-e416-51a8-a533-79bc8ce8f92c")
+	)
+	(global_label "VDD_3V7_WIFI"
+		(shape passive)
+		(at 133.35 270.51 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "876640f9-ec1f-57f3-bd47-129ab21cfcea")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 133.35 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | 3,7 V | Napajanje\nmodula WiFi/Bluetooth RP1-RM0\n(U7)."
+		(exclude_from_sim no)
+		(at 130.85 278.13 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "2c473be7-b255-5a60-ba6e-0ac09d75b02b")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 133.35 302.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1a8d9541-a3d9-57bd-86ad-ca38b8185cc0")
+		(property "Reference" "TP28"
+			(at 133.35 293.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_BCM_CORE"
+			(at 133.35 295.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 133.35 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jezgreno napajanje SoC-a BCM2712; napon se mijenja s opterećenjem (DVFS)."
+			(at 133.35 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 133.35 302.26) (xy 133.35 307.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46be2825-6eb2-5ad0-a8f9-3495af9eaae7")
+	)
+	(global_label "VDD_BCM_CORE"
+		(shape passive)
+		(at 133.35 307.34 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "158460c8-e60c-54cc-82b7-949f5ecf7db4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 133.35 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | ~0,8 V | Jezgreno\nnapajanje SoC-a BCM2712; napon se\nmijenja s opterećenjem (DVFS)."
+		(exclude_from_sim no)
+		(at 130.85 314.96 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "8c1169e6-a5b1-56ef-95a2-2f69e556637c")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 133.35 339.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "695c324a-a0c6-5a1b-b93b-dc6041287b34")
+		(property "Reference" "TP9"
+			(at 133.35 330.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VREF_3V3"
+			(at 133.35 332.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 133.35 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Referentnih 3,3 V (djelitelj napona, ne opterećivati)."
+			(at 133.35 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 133.35 339.09) (xy 133.35 344.16999999999996)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e079aade-e14a-5cd9-b366-44a096a4c29e")
+	)
+	(global_label "VREF_3V3"
+		(shape passive)
+		(at 133.35 344.16999999999996 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "388a724f-b6eb-5f2a-b697-417cfdbb3cbd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 133.35 344.16999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | 3,3 V | Referentnih\n3,3 V (djelitelj napona, ne\nopterećivati)."
+		(exclude_from_sim no)
+		(at 130.85 351.78999999999996 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "1d452087-1e46-518d-82a9-d620570100d9")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 133.35 375.91999999999996 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c83b099e-df17-5d83-b8b8-4c18a8a307e1")
+		(property "Reference" "TP10"
+			(at 133.35 367.41999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VREG"
+			(at 133.35 369.41999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 133.35 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Izlaz unutarnjega regulatora PMIC-a DA9091; mjerna točka, ne napajanje."
+			(at 133.35 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 133.35 375.91999999999996) (xy 133.35 380.99999999999994)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a94f705b-3d30-5e92-b834-b30c3495b52a")
+	)
+	(global_label "VREG"
+		(shape passive)
+		(at 133.35 380.99999999999994 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "0ab6ed33-db9e-5cf4-8c51-0b88962546a1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 133.35 380.99999999999994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Napajanje | – | Izlaz unutarnjega\nregulatora PMIC-a DA9091; mjerna\ntočka, ne napajanje."
+		(exclude_from_sim no)
+		(at 130.85 388.61999999999995 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "4b781a13-f09c-51e1-bc3e-bc92f8cf1e16")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 224.79 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "61808ff3-bd30-5f88-af08-38977b3079c3")
+		(property "Reference" "TP3"
+			(at 224.79 35.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 224.79 37.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 224.79 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 224.79 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Masa. Referentna točka za sva mjerenja; devet točaka po ploči."
+			(at 224.79 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 224.79 44.45) (xy 224.79 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d2f5636-cc6e-5989-9635-11f9b01627fc")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 224.79 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "85c78060-66a1-5e1c-ad6f-d5a8f051c0dd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.79 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Masa | 0 V | Masa. Referentna\ntočka za sva mjerenja; devet\ntočaka po ploči."
+		(exclude_from_sim no)
+		(at 222.29 57.150000000000006 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "aa2e2bf4-118c-528a-b772-c22ba73e844c")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 224.79 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "763aa3b0-46b1-5816-b086-fc98c20ff8ad")
+		(property "Reference" "TP7"
+			(at 224.79 72.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 224.79 74.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 224.79 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 224.79 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Masa. Referentna točka za sva mjerenja; devet točaka po ploči."
+			(at 224.79 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 224.79 81.28) (xy 224.79 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b1d09b1-4da4-5920-8c38-cf41d739888c")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 224.79 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "97f50b44-1ea4-5778-8982-b6d06a64348d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.79 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Masa | 0 V | Masa. Referentna\ntočka za sva mjerenja; devet\ntočaka po ploči."
+		(exclude_from_sim no)
+		(at 222.29 93.98 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "494f1388-0985-5485-9cc3-5672664bcfb0")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 224.79 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "084f92f3-d67b-53af-af0c-42fb6af574b1")
+		(property "Reference" "TP8"
+			(at 224.79 109.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 224.79 111.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 224.79 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 224.79 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Masa. Referentna točka za sva mjerenja; devet točaka po ploči."
+			(at 224.79 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 224.79 118.11) (xy 224.79 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10a23ac9-63c9-5d7e-bb79-2eea5b392028")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 224.79 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "d5a90de4-a944-567d-bf7f-fd21e8be6192")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.79 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Masa | 0 V | Masa. Referentna\ntočka za sva mjerenja; devet\ntočaka po ploči."
+		(exclude_from_sim no)
+		(at 222.29 130.81 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "1f0fc750-1105-5802-a297-1e62e6746724")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 224.79 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3609bd80-80ce-5918-b8ef-97b5f4489418")
+		(property "Reference" "TP13"
+			(at 224.79 146.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 224.79 148.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 224.79 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 224.79 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Masa. Referentna točka za sva mjerenja; devet točaka po ploči."
+			(at 224.79 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 224.79 154.94) (xy 224.79 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc4ae427-38f0-5a0d-8ecb-81830b37e4df")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 224.79 160.02 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "abc7cf28-15f4-5eb8-8c40-59a2071cd77a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.79 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Masa | 0 V | Masa. Referentna\ntočka za sva mjerenja; devet\ntočaka po ploči."
+		(exclude_from_sim no)
+		(at 222.29 167.64 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "fbcdf43e-2d43-5f9f-a06c-161b5e10a5c0")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 224.79 191.76999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2c6bb03b-984b-503d-89f9-2711df017599")
+		(property "Reference" "TP26"
+			(at 224.79 183.26999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 224.79 185.26999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 224.79 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 224.79 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Masa. Referentna točka za sva mjerenja; devet točaka po ploči."
+			(at 224.79 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 224.79 191.76999999999998) (xy 224.79 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e86fbcc4-0402-5ea5-99fe-352843fed28d")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 224.79 196.85 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "e637337f-2a46-519b-976f-d68d0ad9edf4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.79 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Masa | 0 V | Masa. Referentna\ntočka za sva mjerenja; devet\ntočaka po ploči."
+		(exclude_from_sim no)
+		(at 222.29 204.46999999999997 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "f52701f8-0978-5407-8eaa-ed499375e072")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 224.79 228.59999999999997 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "80ef77c5-017d-5705-9c59-ade4dea2d6e9")
+		(property "Reference" "TP46"
+			(at 224.79 220.09999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 224.79 222.09999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 224.79 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 224.79 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Masa. Referentna točka za sva mjerenja; devet točaka po ploči."
+			(at 224.79 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 224.79 228.59999999999997) (xy 224.79 233.67999999999998)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6abd1b9-7fb3-578a-b6c1-6a471771bdcd")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 224.79 233.67999999999998 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "8b342fd6-00e5-58c5-af07-37e1d3560193")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.79 233.67999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Masa | 0 V | Masa. Referentna\ntočka za sva mjerenja; devet\ntočaka po ploči."
+		(exclude_from_sim no)
+		(at 222.29 241.29999999999995 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "8c0d31b4-66b7-59fd-a010-8b1d6cc2dd08")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 224.79 265.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0c8efba0-c277-5c27-bde7-89a124e2b225")
+		(property "Reference" "TP60"
+			(at 224.79 256.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 224.79 258.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 224.79 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 224.79 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Masa. Referentna točka za sva mjerenja; devet točaka po ploči."
+			(at 224.79 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 224.79 265.43) (xy 224.79 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03c0409b-9085-5b2e-b6ff-0959b5eb7a7d")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 224.79 270.51 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "acfe9ccb-9a2f-5cb4-ba18-4ab543c82339")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.79 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Masa | 0 V | Masa. Referentna\ntočka za sva mjerenja; devet\ntočaka po ploči."
+		(exclude_from_sim no)
+		(at 222.29 278.13 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "b3c21220-12a6-56e2-94a3-f4f4ff28440a")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 224.79 302.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ba6b5bac-cbef-5aac-ad14-789b903ae988")
+		(property "Reference" "TP61"
+			(at 224.79 293.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 224.79 295.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 224.79 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 224.79 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Masa. Referentna točka za sva mjerenja; devet točaka po ploči."
+			(at 224.79 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 224.79 302.26) (xy 224.79 307.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c599995c-9626-5c1d-8248-c4e978941d54")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 224.79 307.34 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "a1f6ac41-31bd-5b78-9854-ea3fc1970255")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.79 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Masa | 0 V | Masa. Referentna\ntočka za sva mjerenja; devet\ntočaka po ploči."
+		(exclude_from_sim no)
+		(at 222.29 314.96 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "7fd54019-f5f1-5479-b851-95282a3c14d0")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 224.79 339.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e85145b5-336f-51b8-8f76-1be7be0cb5d7")
+		(property "Reference" "TP62"
+			(at 224.79 330.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 224.79 332.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 224.79 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 224.79 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Masa. Referentna točka za sva mjerenja; devet točaka po ploči."
+			(at 224.79 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 224.79 339.09) (xy 224.79 344.16999999999996)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a44073f-bd52-5842-9c59-89e9639ac2a2")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 224.79 344.16999999999996 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "8ba2bd55-015a-5ee0-89d7-6b6a36f9b100")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.79 344.16999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Masa | 0 V | Masa. Referentna\ntočka za sva mjerenja; devet\ntočaka po ploči."
+		(exclude_from_sim no)
+		(at 222.29 351.78999999999996 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "03ac24ac-729a-5645-b225-c443b32529bc")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 224.79 375.91999999999996 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b9c31cfa-b354-5001-9cf3-8282b7f028a3")
+		(property "Reference" "TP4"
+			(at 224.79 367.41999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PMIC_INT"
+			(at 224.79 369.41999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 224.79 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 224.79 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zahtjev za prekid iz PMIC-a DA9091 prema BCM2712 (djelatan niskom razinom)."
+			(at 224.79 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 224.79 375.91999999999996) (xy 224.79 380.99999999999994)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7db434e0-09f3-5626-8426-c0c0d2f2d5b6")
+	)
+	(global_label "PMIC_INT"
+		(shape passive)
+		(at 224.79 380.99999999999994 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "34703314-9879-52a5-9c9a-93c50ba0eb5c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 224.79 380.99999999999994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Upravljanje i pokretanje | 3,3 V |\nZahtjev za prekid iz PMIC-a DA9091\nprema BCM2712 (djelatan niskom\nrazinom)."
+		(exclude_from_sim no)
+		(at 222.29 388.61999999999995 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "f03bd102-cf8b-5c89-8544-78e192c43495")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 316.23 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0a58ae02-3a8b-55da-9298-d179cbf781fd")
+		(property "Reference" "TP39"
+			(at 316.23 35.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "EN_LOAD_SW"
+			(at 316.23 37.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 316.23 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 316.23 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 316.23 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ulaz ON sklopke napajanja SLG59M1446V (U10); na ploči označeno EN_LOAD_SW, visoka razina znači uključenu sklopku."
+			(at 316.23 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 316.23 44.45) (xy 316.23 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aac75a0b-b0ba-5bdc-816e-1632a4f13db5")
+	)
+	(global_label "PWRSW_U10_ON"
+		(shape passive)
+		(at 316.23 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "c2820987-f8dc-5d43-8f30-8ef482f026e4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 316.23 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Upravljanje i pokretanje | – |\nUlaz ON sklopke napajanja\nSLG59M1446V (U10); na ploči\noznačeno EN_LOAD_SW, visoka razina\nznači uključenu sklopku."
+		(exclude_from_sim no)
+		(at 313.73 57.150000000000006 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "95e25746-c8d6-594a-a27d-845425464806")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 316.23 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "394e127c-2ba9-5284-b42f-068a5b7fa3d4")
+		(property "Reference" "TP42"
+			(at 316.23 72.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_BUT"
+			(at 316.23 74.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 316.23 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 316.23 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 316.23 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tipka napajanja prema PMIC-u; kratki spoj na masu budi ili gasi modul."
+			(at 316.23 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 316.23 81.28) (xy 316.23 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41af0183-6fe6-536b-90eb-59406147c8a1")
+	)
+	(global_label "PWR_BUT"
+		(shape passive)
+		(at 316.23 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "6b82ca60-07f1-59a5-986d-7b5301252aa9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 316.23 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Upravljanje i pokretanje | 3,3 V |\nTipka napajanja prema PMIC-u;\nkratki spoj na masu budi ili gasi\nmodul."
+		(exclude_from_sim no)
+		(at 313.73 93.98 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "397211ac-dac3-5b8f-9851-db0457bcc687")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 316.23 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "34082754-b4c0-54e9-861e-2308aae399c3")
+		(property "Reference" "TP2"
+			(at 316.23 109.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RUN"
+			(at 316.23 111.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 316.23 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 316.23 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 316.23 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Opći ponovni postav (djelatan niskom razinom, s otporom prema napajanju). Kratki spoj na masu ponovno pokreće modul."
+			(at 316.23 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 316.23 118.11) (xy 316.23 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2bce048-d8f6-5fe0-b9ac-4c384bbb1a8a")
+	)
+	(global_label "RUN"
+		(shape passive)
+		(at 316.23 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "1dbce4d3-47c0-5ad6-b770-8d116a1c3788")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 316.23 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Upravljanje i pokretanje | 3,3 V |\nOpći ponovni postav (djelatan\nniskom razinom, s otporom prema\nnapajanju). Kratki spoj na masu\nponovno pokreće modul."
+		(exclude_from_sim no)
+		(at 313.73 130.81 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "410a5103-4e5c-5531-9612-89aab1c3aeaa")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 316.23 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "59fc9a5b-1140-5557-9f51-cb4932289cc8")
+		(property "Reference" "TP21"
+			(at 316.23 146.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "nRESET_OUT"
+			(at 316.23 148.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 316.23 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 316.23 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 316.23 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Izlazni ponovni postav prema sklopovlju nosive ploče; niska razina dok modul nije spreman."
+			(at 316.23 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 316.23 154.94) (xy 316.23 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8a77590-96a7-5361-a4e5-2862edd7f3b0")
+	)
+	(global_label "nRESET_OUT"
+		(shape passive)
+		(at 316.23 160.02 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "97e5434f-711a-50ba-8221-a81b5eb3ce08")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 316.23 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Upravljanje i pokretanje | 3,3 V |\nIzlazni ponovni postav prema\nsklopovlju nosive ploče; niska\nrazina dok modul nije spreman."
+		(exclude_from_sim no)
+		(at 313.73 167.64 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "27eef1cf-0688-5144-8a08-5e271dd81b2f")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 316.23 191.76999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0cc7566c-c15f-52ff-af61-4489eaead0db")
+		(property "Reference" "TP16"
+			(at 316.23 183.26999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "nRPIBOOT"
+			(at 316.23 185.26999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 316.23 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 316.23 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 316.23 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Niska razina pri uključenju pokreće modul s USB-a (rpiboot) umjesto s eMMC-a."
+			(at 316.23 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 316.23 191.76999999999998) (xy 316.23 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33aa3a3f-9b18-5a73-b364-b07779b3b0ce")
+	)
+	(global_label "nRPIBOOT"
+		(shape passive)
+		(at 316.23 196.85 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "1b7a13ca-d3bd-5e3d-96aa-9cfc456e4b01")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 316.23 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Upravljanje i pokretanje | 3,3 V |\nNiska razina pri uključenju\npokreće modul s USB-a (rpiboot)\numjesto s eMMC-a."
+		(exclude_from_sim no)
+		(at 313.73 204.46999999999997 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "94e746c3-5d2b-5c20-8c97-08efb691735c")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 316.23 228.59999999999997 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f5ba8a56-80e9-5561-aaee-cdd63c090ee2")
+		(property "Reference" "TP36"
+			(at 316.23 220.09999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DEBUG_UART_RX"
+			(at 316.23 222.09999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 316.23 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 316.23 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 316.23 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Serijska konzola, ulaz u modul."
+			(at 316.23 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 316.23 228.59999999999997) (xy 316.23 233.67999999999998)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "306c83e9-e5e9-5476-b794-b1acbc091bc4")
+	)
+	(global_label "DEBUG_UART_RX"
+		(shape passive)
+		(at 316.23 233.67999999999998 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "1e3611bf-ebd7-5849-b881-cf0bf02419f8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 316.23 233.67999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Otklanjanje pogrešaka (JTAG/UART)\n| 3,3 V | Serijska konzola, ulaz u\nmodul."
+		(exclude_from_sim no)
+		(at 313.73 241.29999999999995 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "c4f8bdc6-d232-5ce2-b7b0-dc92f907990c")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 316.23 265.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fb507a2e-dfd1-5f61-91e7-96f020e7209c")
+		(property "Reference" "TP35"
+			(at 316.23 256.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DEBUG_UART_TX"
+			(at 316.23 258.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 316.23 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 316.23 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 316.23 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Serijska konzola, izlaz iz modula (115200 8N1)."
+			(at 316.23 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 316.23 265.43) (xy 316.23 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a361cdc-b40c-5d39-8fd1-df838927c66e")
+	)
+	(global_label "DEBUG_UART_TX"
+		(shape passive)
+		(at 316.23 270.51 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "f7ec74be-2274-5823-99e5-9331efae7455")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 316.23 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Otklanjanje pogrešaka (JTAG/UART)\n| 3,3 V | Serijska konzola, izlaz\niz modula (115200 8N1)."
+		(exclude_from_sim no)
+		(at 313.73 278.13 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "e1468c66-1897-5501-81a8-591825a78b11")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 316.23 302.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e6820a23-e1db-5d4c-badf-630e980187c3")
+		(property "Reference" "TP52"
+			(at 316.23 293.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SOC_TCK"
+			(at 316.23 295.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 316.23 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 316.23 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 316.23 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Takt JTAG prema BCM2712."
+			(at 316.23 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 316.23 302.26) (xy 316.23 307.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c0eedb4-f2b1-5eba-9213-c41011a2c8c4")
+	)
+	(global_label "SOC_TCK"
+		(shape passive)
+		(at 316.23 307.34 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "d4b4f58e-0205-5a7c-be0b-c1b2c302dd4d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 316.23 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Otklanjanje pogrešaka (JTAG/UART)\n| 3,3 V | Takt JTAG prema BCM2712."
+		(exclude_from_sim no)
+		(at 313.73 314.96 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "e78e4f9c-733d-5d01-b08a-381ba2883484")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 316.23 339.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4b0edd74-7b2b-527a-8e11-955528100410")
+		(property "Reference" "TP49"
+			(at 316.23 330.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SOC_TDI"
+			(at 316.23 332.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 316.23 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 316.23 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 316.23 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ulaz podataka JTAG."
+			(at 316.23 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 316.23 339.09) (xy 316.23 344.16999999999996)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db6287ed-7f6d-5a68-9d2f-ad232b6aeb01")
+	)
+	(global_label "SOC_TDI"
+		(shape passive)
+		(at 316.23 344.16999999999996 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "1b448d22-00b2-51ac-944a-7762eba3e7fb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 316.23 344.16999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Otklanjanje pogrešaka (JTAG/UART)\n| 3,3 V | Ulaz podataka JTAG."
+		(exclude_from_sim no)
+		(at 313.73 351.78999999999996 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "837a441d-3191-5133-b096-d03af0fd7cf4")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 316.23 375.91999999999996 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2217dcc1-f0a4-5c93-a50d-f9b46e325062")
+		(property "Reference" "TP50"
+			(at 316.23 367.41999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SOC_TDO"
+			(at 316.23 369.41999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 316.23 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 316.23 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 316.23 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Izlaz podataka JTAG."
+			(at 316.23 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 316.23 375.91999999999996) (xy 316.23 380.99999999999994)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cab7d3c-1692-5626-9f44-6378dcdfd6d3")
+	)
+	(global_label "SOC_TDO"
+		(shape passive)
+		(at 316.23 380.99999999999994 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "98892c7d-9768-5bf7-96f3-5b9fe0f2175b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 316.23 380.99999999999994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Otklanjanje pogrešaka (JTAG/UART)\n| 3,3 V | Izlaz podataka JTAG."
+		(exclude_from_sim no)
+		(at 313.73 388.61999999999995 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "af97aec4-065d-5686-ad20-2ac500411d87")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 407.67 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b41d0615-8e16-5b0e-be78-64e61be22567")
+		(property "Reference" "TP51"
+			(at 407.67 35.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SOC_TMS"
+			(at 407.67 37.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 407.67 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 407.67 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 407.67 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Odabir načina rada JTAG."
+			(at 407.67 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 407.67 44.45) (xy 407.67 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "498b7927-4364-58ba-9a44-1f404146c384")
+	)
+	(global_label "SOC_TMS"
+		(shape passive)
+		(at 407.67 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "91ad65e0-1250-580c-860d-5425af50467a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 407.67 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Otklanjanje pogrešaka (JTAG/UART)\n| 3,3 V | Odabir načina rada JTAG."
+		(exclude_from_sim no)
+		(at 405.17 57.150000000000006 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "bca9da2f-9915-5a40-a3cf-ae17551a2022")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 407.67 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53c81fbc-b5e8-542f-84aa-8e730c80fd9e")
+		(property "Reference" "TP48"
+			(at 407.67 72.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SOC_TRST_N"
+			(at 407.67 74.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 407.67 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 407.67 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 407.67 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ponovni postav JTAG (djelatan niskom razinom)."
+			(at 407.67 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 407.67 81.28) (xy 407.67 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3428b6fa-1b2f-54bd-9b2f-9625645cc71b")
+	)
+	(global_label "SOC_TRST_N"
+		(shape passive)
+		(at 407.67 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "9a57f508-e6e3-59af-8762-997f9c6ec2fb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 407.67 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Otklanjanje pogrešaka (JTAG/UART)\n| 3,3 V | Ponovni postav JTAG\n(djelatan niskom razinom)."
+		(exclude_from_sim no)
+		(at 405.17 93.98 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "20b9d525-4a15-5f4e-b2cd-020c95ba9c56")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 407.67 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a03da222-0e3b-5215-81c4-7e1e389efaff")
+		(property "Reference" "TP40"
+			(at 407.67 109.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PMIC_SCL"
+			(at 407.67 111.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 407.67 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 407.67 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 407.67 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Takt sabirnice I2C prema PMIC-u DA9091 — put do registara PMIC-a."
+			(at 407.67 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 407.67 118.11) (xy 407.67 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f816e0ac-3e01-5dae-ab3d-e8630de2c2fc")
+	)
+	(global_label "PMIC_I2C.SCL"
+		(shape passive)
+		(at 407.67 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "c3aafb81-b595-5836-9dcf-0389999dd3db")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 407.67 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Sabirnica I2C prema PMIC-u | 3,3 V\n| Takt sabirnice I2C prema PMIC-u\nDA9091 — put do registara PMIC-a."
+		(exclude_from_sim no)
+		(at 405.17 130.81 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "ec57e739-9475-5a6e-adfe-9cf6483fdf5a")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 407.67 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "865ed916-2c6b-5d37-9d91-afad0992a0fc")
+		(property "Reference" "TP41"
+			(at 407.67 146.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PMIC_SDA"
+			(at 407.67 148.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 407.67 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 407.67 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 407.67 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Podatci sabirnice I2C prema PMIC-u DA9091."
+			(at 407.67 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 407.67 154.94) (xy 407.67 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56f2b861-b207-5003-8a75-d52e351f2f2b")
+	)
+	(global_label "PMIC_I2C.SDA"
+		(shape passive)
+		(at 407.67 160.02 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "759130a4-adcb-59e2-8c27-346d70257eff")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 407.67 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Sabirnica I2C prema PMIC-u | 3,3 V\n| Podatci sabirnice I2C prema\nPMIC-u DA9091."
+		(exclude_from_sim no)
+		(at 405.17 167.64 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "2be5a358-4c8b-53a7-9769-2e3b9387d043")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 407.67 191.76999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b6a715c-4952-5423-b757-4116f628cacf")
+		(property "Reference" "TP70"
+			(at 407.67 183.26999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ETH0_N"
+			(at 407.67 185.26999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 407.67 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 407.67 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 407.67 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ethernetski par A, negativni vod."
+			(at 407.67 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 407.67 191.76999999999998) (xy 407.67 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2b36b9b-59b4-52a5-bb45-e26ca98e7687")
+	)
+	(global_label "ETH.0_N"
+		(shape passive)
+		(at 407.67 196.85 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "db1e7bfb-10e0-595a-82c1-06edcba28cd9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 407.67 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Ethernet 1000BASE-T | par |\nEthernetski par A, negativni vod."
+		(exclude_from_sim no)
+		(at 405.17 204.46999999999997 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "0c4922cc-90c0-5e6c-b3ea-7b8b79313348")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 407.67 228.59999999999997 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1590d509-add6-513a-a2d5-32de62abdc9d")
+		(property "Reference" "TP69"
+			(at 407.67 220.09999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ETH0_P"
+			(at 407.67 222.09999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 407.67 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 407.67 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 407.67 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ethernetski par A, pozitivni vod (od PHY-ja BCM54210PE prema konektoru)."
+			(at 407.67 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP69")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 407.67 228.59999999999997) (xy 407.67 233.67999999999998)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05c78e7d-92ec-50d5-991a-e8775d5d4b20")
+	)
+	(global_label "ETH.0_P"
+		(shape passive)
+		(at 407.67 233.67999999999998 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "c9a9d859-b861-5a24-b8c7-0365e50d35b4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 407.67 233.67999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Ethernet 1000BASE-T | par |\nEthernetski par A, pozitivni vod\n(od PHY-ja BCM54210PE prema\nkonektoru)."
+		(exclude_from_sim no)
+		(at 405.17 241.29999999999995 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "8ae6c3a6-42e8-5a57-9a79-cb5748aafe9e")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 407.67 265.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8292111e-59b2-5286-b304-90a0ecdef277")
+		(property "Reference" "TP71"
+			(at 407.67 256.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ETH1_N"
+			(at 407.67 258.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 407.67 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 407.67 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 407.67 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ethernetski par B, negativni vod."
+			(at 407.67 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 407.67 265.43) (xy 407.67 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e025bfc-9b1d-5206-861b-991866895a4c")
+	)
+	(global_label "ETH.1_N"
+		(shape passive)
+		(at 407.67 270.51 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "7a84d7a8-ea00-5c91-b27e-9c5717ca18b0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 407.67 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Ethernet 1000BASE-T | par |\nEthernetski par B, negativni vod."
+		(exclude_from_sim no)
+		(at 405.17 278.13 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "20c0d5d3-8f9f-53f7-9626-90fe26a38416")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 407.67 302.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dc2ff507-3005-5afe-8da4-342255876a00")
+		(property "Reference" "TP72"
+			(at 407.67 293.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ETH1_P"
+			(at 407.67 295.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 407.67 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 407.67 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 407.67 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ethernetski par B, pozitivni vod."
+			(at 407.67 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP72")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 407.67 302.26) (xy 407.67 307.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "157a5d98-25db-534d-83a9-d5959cf568d6")
+	)
+	(global_label "ETH.1_P"
+		(shape passive)
+		(at 407.67 307.34 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "74f714c1-5ce5-50c4-8c0a-9f5010b672c2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 407.67 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Ethernet 1000BASE-T | par |\nEthernetski par B, pozitivni vod."
+		(exclude_from_sim no)
+		(at 405.17 314.96 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "77180bd7-4cf0-560a-8e7d-e31dd530f5f2")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 407.67 339.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4726ae2f-c981-5424-853a-02fafbea7b67")
+		(property "Reference" "TP74"
+			(at 407.67 330.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ETH2_N"
+			(at 407.67 332.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 407.67 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 407.67 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 407.67 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ethernetski par C, negativni vod."
+			(at 407.67 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP74")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 407.67 339.09) (xy 407.67 344.16999999999996)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79bc23f7-dc55-5f95-b4cf-5ca565ee08fc")
+	)
+	(global_label "ETH.2_N"
+		(shape passive)
+		(at 407.67 344.16999999999996 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "07c15ce5-d9ba-5bf9-b97d-c3057d535f04")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 407.67 344.16999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Ethernet 1000BASE-T | par |\nEthernetski par C, negativni vod."
+		(exclude_from_sim no)
+		(at 405.17 351.78999999999996 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "23101375-e575-515e-ac3b-ec6ff608f35b")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 407.67 375.91999999999996 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a440ca56-8b55-5cfe-adb7-f53e36cde7ba")
+		(property "Reference" "TP73"
+			(at 407.67 367.41999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ETH2_P"
+			(at 407.67 369.41999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 407.67 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 407.67 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 407.67 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ethernetski par C, pozitivni vod."
+			(at 407.67 375.91999999999996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP73")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 407.67 375.91999999999996) (xy 407.67 380.99999999999994)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c71c3db8-480f-5686-a74e-6dfe23c1aa1d")
+	)
+	(global_label "ETH.2_P"
+		(shape passive)
+		(at 407.67 380.99999999999994 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "7efce72a-1fdf-58bd-a038-9e555293b29f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 407.67 380.99999999999994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Ethernet 1000BASE-T | par |\nEthernetski par C, pozitivni vod."
+		(exclude_from_sim no)
+		(at 405.17 388.61999999999995 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "c89c6a3e-a057-5f34-bdda-d607ee2c30b5")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 499.11 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "978df790-e43e-5014-9aa3-3e91f335f5e7")
+		(property "Reference" "TP76"
+			(at 499.11 35.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ETH3_N"
+			(at 499.11 37.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 499.11 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 499.11 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 499.11 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ethernetski par D, negativni vod."
+			(at 499.11 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP76")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 499.11 44.45) (xy 499.11 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb6f167e-2904-5574-8988-00d1c859b893")
+	)
+	(global_label "ETH.3_N"
+		(shape passive)
+		(at 499.11 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "22a7714e-c0b0-5d5c-99f1-dd3a98b88a24")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 499.11 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Ethernet 1000BASE-T | par |\nEthernetski par D, negativni vod."
+		(exclude_from_sim no)
+		(at 496.61 57.150000000000006 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "63becfb2-ea45-5b62-beb2-4d48b18783f1")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 499.11 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "669c722a-043b-5a7b-8ce7-18a6d99133a9")
+		(property "Reference" "TP75"
+			(at 499.11 72.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ETH3_P"
+			(at 499.11 74.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 499.11 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 499.11 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 499.11 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ethernetski par D, pozitivni vod."
+			(at 499.11 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP75")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 499.11 81.28) (xy 499.11 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0b4a6f9-c27d-5323-a548-232e2c51ffc4")
+	)
+	(global_label "ETH.3_P"
+		(shape passive)
+		(at 499.11 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "086ff1c9-9e91-523b-bde5-6ec7b4da1931")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 499.11 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Ethernet 1000BASE-T | par |\nEthernetski par D, pozitivni vod."
+		(exclude_from_sim no)
+		(at 496.61 93.98 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "69b0402c-10a4-56dc-bea0-17199f44a2ad")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 499.11 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "03ec01e2-9caa-5e4c-83be-cfd437d39a32")
+		(property "Reference" "TP65"
+			(at 499.11 109.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USBC_D_N"
+			(at 499.11 111.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 499.11 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 499.11 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 499.11 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB 2.0 D− prema konektoru (J4, nožica 3); rabi se i za rpiboot."
+			(at 499.11 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 499.11 118.11) (xy 499.11 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a5892da-f9eb-5d2e-a24f-59a6619dd16d")
+	)
+	(global_label "USBC.DM"
+		(shape passive)
+		(at 499.11 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "0f2ebd84-3036-5b02-92f3-98321794a087")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 499.11 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "USB 2.0 | par | USB 2.0 D− prema\nkonektoru (J4, nožica 3); rabi se\ni za rpiboot."
+		(exclude_from_sim no)
+		(at 496.61 130.81 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "10712c0d-701d-5f32-a36e-fae81dc7070c")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 499.11 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8057efc9-18bb-5d5b-92b9-bf2f0b421e3d")
+		(property "Reference" "TP66"
+			(at 499.11 146.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USBC_D_P"
+			(at 499.11 148.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 499.11 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 499.11 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 499.11 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB 2.0 D+ prema konektoru (J4, nožica 5)."
+			(at 499.11 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 499.11 154.94) (xy 499.11 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4d67a74-8b27-510f-8f51-dc7361e7d2bb")
+	)
+	(global_label "USBC.DP"
+		(shape passive)
+		(at 499.11 160.02 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "f2d9f0e9-68be-5dae-a58f-76b2f9db19bf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 499.11 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "USB 2.0 | par | USB 2.0 D+ prema\nkonektoru (J4, nožica 5)."
+		(exclude_from_sim no)
+		(at 496.61 167.64 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "386312db-e0a3-57a0-9469-d09e8731d5b5")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 499.11 191.76999999999998 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8c29fbc1-dc86-5d70-9305-f8afcc8f0cad")
+		(property "Reference" "TP68"
+			(at 499.11 183.26999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_nACT"
+			(at 499.11 185.26999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 499.11 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 499.11 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 499.11 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Upravljanje svjetiljkom aktivnosti (djelatno niskom razinom, J3, nožica 21)."
+			(at 499.11 191.76999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP68")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 499.11 191.76999999999998) (xy 499.11 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2358b307-3335-574d-9adc-87b62df38681")
+	)
+	(global_label "LED_nACT"
+		(shape passive)
+		(at 499.11 196.85 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "44f67e4b-d4ca-5c88-a5d2-5452c6b819da")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 499.11 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Signalne svjetiljke | 3,3 V |\nUpravljanje svjetiljkom aktivnosti\n(djelatno niskom razinom, J3,\nnožica 21)."
+		(exclude_from_sim no)
+		(at 496.61 204.46999999999997 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "c6940827-ec43-531e-8d8f-3baa50c960d8")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 499.11 228.59999999999997 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "07e25a42-82bd-50da-94a2-6a5464cac956")
+		(property "Reference" "TP67"
+			(at 499.11 220.09999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_nPWR"
+			(at 499.11 222.09999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 499.11 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 499.11 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 499.11 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Upravljanje svjetiljkom napajanja (djelatno niskom razinom, J3, nožica 95)."
+			(at 499.11 228.59999999999997 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP67")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 499.11 228.59999999999997) (xy 499.11 233.67999999999998)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f988bd2b-6940-5754-a1d7-65886f83dfef")
+	)
+	(global_label "LED_nPWR"
+		(shape passive)
+		(at 499.11 233.67999999999998 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "be7fad45-deb1-5c95-a41a-80ad4f036109")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 499.11 233.67999999999998 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Signalne svjetiljke | 3,3 V |\nUpravljanje svjetiljkom napajanja\n(djelatno niskom razinom, J3,\nnožica 95)."
+		(exclude_from_sim no)
+		(at 496.61 241.29999999999995 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "9894d716-b506-5c77-b34e-5b26e31f5d4e")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 499.11 265.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fd0208df-0897-5a38-9dd5-c08de511e436")
+		(property "Reference" "TP22"
+			(at 499.11 256.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PMIC_SIG"
+			(at 499.11 258.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 499.11 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 499.11 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 499.11 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Točka na nožici 48 PMIC-a DA9091 (U5), na ploči označena PMIC_SIG; u izvornoj shemi mreža nema ime."
+			(at 499.11 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 499.11 265.43) (xy 499.11 270.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6776dea1-9b05-548a-acd2-f1c59c36c2ad")
+	)
+	(global_label "PMIC_U5_PIN48"
+		(shape passive)
+		(at 499.11 270.51 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "dc93bf6c-6195-5698-9689-bf86930a85b6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 499.11 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Ostalo | – | Točka na nožici 48\nPMIC-a DA9091 (U5), na ploči\noznačena PMIC_SIG; u izvornoj\nshemi mreža nema ime."
+		(exclude_from_sim no)
+		(at 496.61 278.13 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "bced0435-f4fe-5a18-b392-0c64e6518259")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:TestPoint")
+		(at 499.11 302.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6efb1677-1532-527c-9108-1251782cfb6a")
+		(property "Reference" "TP57"
+			(at 499.11 293.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RP1_TP"
+			(at 499.11 295.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:TestPoint_Pad_D1.0mm"
+			(at 499.11 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 499.11 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 499.11 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Veza RP1 (U3, kuglica E12) i BCM2712 (U1, kuglica AD1), na ploči označena RP1_TP; izvorna shema ne opisuje namjenu."
+			(at 499.11 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/38c5398c-3125-56bc-9ae0-80f2a9573d3a"
+					(reference "TP57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 499.11 302.26) (xy 499.11 307.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b959457-dc38-58b1-aeda-ccab6c0aa8cf")
+	)
+	(global_label "RPU4"
+		(shape passive)
+		(at 499.11 307.34 0)
+		(fields_autoplaced yes)
+		(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		(uuid "2b6f8242-554d-5327-9831-f4e3d071e74d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 499.11 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(text "Ostalo | – | Veza RP1 (U3, kuglica\nE12) i BCM2712 (U1, kuglica AD1),\nna ploči označena RP1_TP; izvorna\nshema ne opisuje namjenu."
+		(exclude_from_sim no)
+		(at 496.61 314.96 0)
+		(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(justify left)
+			)
+		(uuid "f42b6038-a3a6-59a4-8cc3-4dda860a40ac")
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,354 @@
+(kicad_sch
+	(version 20250114)
+	(generator "cm5_tp_breakout_gen")
+	(generator_version "9.0")
+	(uuid "c98e71d4-3084-5c50-8ea4-ea484809aa3b")
+	(paper "A4")
+	(title_block
+		(title "CM5 Test Point Breakout — mehanika")
+		(rev "1")
+		(company "izvedeno iz schlae/cm5-reveng, CC BY-SA 4.0")
+		(comment 1 "Četiri rupe za pričvršćenje, raspored 48 × 33 mm kao na CM5 modulu")
+	)
+	(lib_symbols
+		(symbol "cm5_tp_breakout:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "RUPE ZA PRIČVRŠĆENJE (4 komada)\nRaspored odgovara CM5 modulu: 48,0 mm × 33,0 mm, središta 3,5 mm od ruba ploče 55 × 40 mm.\nRupe nisu električki spojene (simbol nema nožicu), pa ne ulaze u popis mreža."
+		(exclude_from_sim no)
+		(at 20 25 0)
+		(effects
+				(font
+					(size 2.0 2.0)
+				)
+				(justify left)
+			)
+		(uuid "e206a594-22f1-5666-a31a-1ee605591dcd")
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:MountingHole")
+		(at 59.69 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "09a6dc18-98ad-57a3-98e1-9e1d35ca16dd")
+		(property "Reference" "H1"
+			(at 59.69 80.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 59.69 82.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:CM5_MH"
+			(at 59.69 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 59.69 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/c98e71d4-3084-5c50-8ea4-ea484809aa3b"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:MountingHole")
+		(at 105.41 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "4cfb727e-e654-50f7-9f57-421b576ebfbf")
+		(property "Reference" "H2"
+			(at 105.41 80.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 105.41 82.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:CM5_MH"
+			(at 105.41 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/c98e71d4-3084-5c50-8ea4-ea484809aa3b"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:MountingHole")
+		(at 151.13 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "037c8543-c00a-5373-9c5e-9bf345d931ba")
+		(property "Reference" "H3"
+			(at 151.13 80.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 151.13 82.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:CM5_MH"
+			(at 151.13 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 151.13 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 151.13 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/c98e71d4-3084-5c50-8ea4-ea484809aa3b"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "cm5_tp_breakout:MountingHole")
+		(at 196.85 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "6472785e-484e-5cd6-aacb-2617f8aae878")
+		(property "Reference" "H4"
+			(at 196.85 80.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 196.85 82.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cm5_tp_breakout:CM5_MH"
+			(at 196.85 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 196.85 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 196.85 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "cm5_tp_breakout"
+				(path "/b3ae0bd5-fdbf-50a1-bd59-5ba5829f4fdd/c98e71d4-3084-5c50-8ea4-ea484809aa3b"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
